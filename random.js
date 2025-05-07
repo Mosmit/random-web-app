@@ -33,3 +33,21 @@ function generateTimetable(){
 
     timetable.innerHTML = output;
 }
+
+
+const button = document.getElementById("button");
+const popover = document.getElementById("popover");
+const close = document.getElementById("close");
+
+button.addEventListener("click", function() {
+
+    popover.classList.add("active");
+
+});
+
+close.addEventListener("click", function() {
+    
+    popover.classList.remove("active");
+
+});
+
